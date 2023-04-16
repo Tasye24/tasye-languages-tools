@@ -13,6 +13,11 @@ We write:
 Using short-long
 
 ## How-to install it ?
+- Unsing unpkg
+```html
+<script src="https://www.unpkg.com/tasye-language-tools@0.0.1/short-long.min.js"></script>
+```
+- Install-it by cloning with github
 ```sh
 git clone https://github.com/Tasye24/tasye-languages-tools ./tasye-tools/languages
 ```
