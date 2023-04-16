@@ -14,7 +14,7 @@
  * */
 function take_long_or_short(prefix, item) {
   let space = " "; // can be alt+255 if troubles
-  let voyels = "aeiouy";
+  let voyels = "aeiouy"+"h";
   voyels = voyels.split("");
 
   let first_letter = item[0].toLowerCase();
