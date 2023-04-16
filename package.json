@@ -1,0 +1,19 @@
+{
+  "name": "tasye-language-tools",
+  "version": "0.0.1",
+  "author": "Tasye24 <requests.tasye@gmail.com>",
+  "description": "## Intro In some languages like french (idk if others languages have same patterns) before a voyel and a muted \"*h*\" you should use an \"[*élision*](https://fr.wiktionary.org/wiki/%C3%A9lision)\".",
+  "main": "short-long.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tasye24/tasye-languages-tools.git"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["javascript", "language", "utility", "js", "javascript-library", "utility-library", "french", "french-language"],
+  "license": "ISC"
+}
