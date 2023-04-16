@@ -13,10 +13,8 @@ We write:
 Using short-long
 
 ## How-to install it ?
-### using github
-we gonna prefer using minified version (use not minified .js while developping and min when publishing)
-```html
-<script src="https://raw.githubusercontent.com/Tasye24/tasye-languages-tools/main/short-long.min.js"></script>
+```sh
+git clone https://github.com/Tasye24/tasye-languages-tools ./tasye-tools/languages
 ```
 ## Usage
 * Example #1
