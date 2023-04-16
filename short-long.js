@@ -1,3 +1,10 @@
+// Problematic:
+// it's embarassing (in french, maybe other languages)
+// when you see for example : "Le tailleur de André"
+//                                          ^^^
+// in french you could write like this: "Le tailleur d'André"
+//                                                   ---
+
 /*
  * @author Tasye24
  * @param prefix{} prefix.long = long version; prefix.short = shor version
