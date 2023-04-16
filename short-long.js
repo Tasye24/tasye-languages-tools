@@ -1,6 +1,16 @@
-/*
+// Problematic:
+// it's embarassing (in french, maybe other languages)
+// when you see for example : "Le tailleur de André"
+//                                          ^^^
+// in french you could write like this: "Le tailleur d'André"
+//                                                   ---
+
+/**
+ * @description With the prefix and the name(as *item*) return the appropriated prefix
  * @author Tasye24
- * @param prefix{} prefix.long = long version; prefix.short = shor version
+ * @param {Object} prefix __prefix.long__: long version, __prefix.short__: short version
+ * @returns {String} return the great prefix & the item
+ * @type {(prefix: {long: string, short: string}, item: string) => string}
  * */
 function take_long_or_short(prefix, item) {
   let space = " "; // can be alt+255 if troubles
@@ -16,9 +26,15 @@ function take_long_or_short(prefix, item) {
   }
 }
 
-// tests
+// examples
 let items = ["Aaron", "Martin", "Jacques", "Georges"];
 let pre = "Le vélo ";
+// pref for example : 
+/* pref= {
+  long: "de" OR "le" OR "la"
+  short: "d'" OR "l'" OR "l'"
+}
+*/
 let pref = {
   long: pre + "de",
   short: pre + "d'",
