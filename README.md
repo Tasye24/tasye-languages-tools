@@ -10,7 +10,13 @@ We write:
 > "Le chat <u>d'A</u>driana"
 
 ## Why use this ?
-Using short-long
+Using [tasye-language-tools](https://github.com/Tasye24/tasye-languages-tools) is efficient for prevent elisions.
+
+## Which languages available for now ?
+| language | pack | locale | version | ready to up ? |
+| -------- | ---- | ------ | ------- | ------------- |
+| French   | ./pack/fr-FR.yaml | fr-FR | 0.0.1 | :small_orange_diamond: not sure |
+| Italian  | ./pack/it-IT.yaml | it-IT | 0.0.1 | :small_orange_diamond: not sure |
 
 ## How-to install it ?
 - Unsing unpkg

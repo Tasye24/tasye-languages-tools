@@ -1,0 +1,49 @@
+_data:
+  _title: fr-FR pack
+  _desc: pack for french language
+  _ready_to_up: false
+  _version: 0.0.1
+data:
+  fr:
+    language: fr
+    locale: fr
+    lang: french
+    character: aeiouyh
+    FR:
+      locale: fr-FR
+      defs:
+        - le:
+            full: le
+            short: &short_l l'
+          la:
+            full: la
+            short: *short_l
+          de:
+            full: de
+            short: d'
+          je:
+            full: je
+            short: j'
+          me:
+            full: me
+            short: m'
+          ne:
+            full: ne
+            short: n'
+          que:
+            full: que
+            short: qu'
+          se:
+            full: se
+            short: &short_s s'
+          si:
+            full: si
+            short: *short_s
+            exeptions:
+              - i
+          te:
+            full: te
+            short: &short_t t'
+          tu:
+            full: tu
+            short: *short_t
