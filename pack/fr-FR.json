@@ -1,0 +1,68 @@
+{
+  "_data": {
+    "_title": "fr-FR pack",
+    "_desc": "pack for french language",
+    "_ready_to_up": false,
+    "_version": "0.0.1"
+  },
+  "data": {
+    "fr": {
+      "language": "fr",
+      "locale": "fr",
+      "lang": "french",
+      "character": "aeiouyh",
+      "FR": {
+        "locale": "fr-FR",
+        "defs": {
+          "le": {
+            "full": "le",
+            "short": "l'"
+          },
+          "la": {
+            "full": "la",
+            "short": "l'"
+          },
+          "de": {
+            "full": "de",
+            "short": "d'"
+          },
+          "je": {
+            "full": "je",
+            "short": "j'"
+          },
+          "me": {
+            "full": "me",
+            "short": "m'"
+          },
+          "ne": {
+            "full": "ne",
+            "short": "n'"
+          },
+          "que": {
+            "full": "que",
+            "short": "qu'"
+          },
+          "se": {
+            "full": "se",
+            "short": "s'"
+          },
+          "si": {
+            "full": "si",
+            "short": "s'",
+            "exeptions": [
+              "i"
+            ]
+          },
+          "te": {
+            "full": "te",
+            "short": "t'"
+          },
+          "tu": {
+            "full": "tu",
+            "short": "t'"
+          }
+        }
+      }
+    }
+  }
+}

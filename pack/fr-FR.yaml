@@ -12,7 +12,7 @@ data:
     FR:
       locale: fr-FR
       defs:
-        - le:
+          le:
             full: le
             short: &short_l l'
           la:

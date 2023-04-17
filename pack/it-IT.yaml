@@ -12,93 +12,93 @@ data:
     IT:
       locale: it-IT
       defs:
-        - lo:
+          lo:
             full: lo
             short: &short_l l'
-        - la:
+          la:
             full: la
             short: *short_l
-        - mi:
+          mi:
             full: mi
             short: m'
-        - ti:
+          ti:
             full: ti
             short: t'
-        - ci:
+          ci:
             full: ci
             short: c'
-        - si:
+          si:
             full: si
             short: s'
-        - vi:
+          vi:
             full: vi
             short: v'
-        - ne:
+          ne:
             full: ne
             short: n'
-        - di:
+          di:
             full: di
             short: d'
-        - anche:
+          anche:
             full: anche
             short: anch'
-        - come:
+          come:
             full: come
             short: com'
-        - gli:
+          gli:
             full: gli
             short: gl'
-        - una:
+          una:
             full: una
             short: un'
-        - dello:
+          dello:
             full: dello
             short: dell'
-        - sullo:
+          sullo:
             full: sullo
             short: sull'
-        - alla:
+          alla:
             full: alla
             short: all'
-        - della:
+          della:
             full: della
             short: dall'
-        - collo:
+          collo:
             full: collo
             short: coll'
-        - quella:
+          quella:
             full: quella
             short: quell'
-        - questo:
+          questo:
             full: questo
             short: quest'
-        - bella:
+          bella:
             full: bella
             short: bell'
-        - santo:
+          santo:
             full: santo
             short: sant'
-        - quattro:
+          quattro:
             full: quattro
             short: quattr'
-        - mille:
+          mille:
             full: mille
             short: mill'
-        - terzo:
+          terzo:
             full: terzo
             short: terz'
-        - mezza:
+          mezza:
             full: mezza
             short: mezz'
-        - altro:
+          altro:
             full: altro
             short: altr'
-        - tutto:
+          tutto:
             full: tutto
             short: tutt'
-        - senza:
+          senza:
             full: senza
             short: senz'
-        - niente:
+          niente:
             full: niente
             short: nient'
