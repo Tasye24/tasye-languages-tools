@@ -4,6 +4,7 @@
 name: Tasye Languages Tools
 
 on:
+  workflow_call:
   release:
     types: [published]
 
