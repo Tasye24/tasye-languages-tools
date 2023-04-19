@@ -4,13 +4,6 @@
 name: Tasye Languages Tools
 
 on:
-  workflow_call:
-    inputs:
-        username:
-          description: 'Launch'
-          default: ''
-          required: false
-          type: string
   release:
     types: [published]
 
@@ -23,7 +16,6 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
-      - run: npm test
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
