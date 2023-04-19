@@ -5,6 +5,12 @@ name: Tasye Languages Tools
 
 on:
   workflow_call:
+    inputs:
+        username:
+          description: 'Launch'
+          default: ''
+          required: false
+          type: string
   release:
     types: [published]
 
