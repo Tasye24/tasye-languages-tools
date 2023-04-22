@@ -5,7 +5,7 @@ name: Tasye Languages Tools
 
 on:
   release:
-    types: [published]
+    types: [created]
 
 jobs:
   build:
@@ -30,7 +30,13 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
           scope: '@tasye24'
-      - run: npm ci
-      - run: npm publish
+      - name: Create NPMRC
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN}}
+      - name: Publish to Github Packages
+        run: |
+          npm config set _auth $NODE_AUTH_TOKEN
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
