@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: 16.x
           registry-url: https://registry.npmjs.org
+          scope: '@tasye24'
+          always-auth: true
+          cache: npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Install dependencies
@@ -36,6 +39,7 @@ jobs:
         with:
           node-version: 16.x
           registry-url: https://registry.npmjs.org/
+          scope: '@tasye24'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm ci
