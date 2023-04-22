@@ -46,17 +46,16 @@ function Tester(array) {
  */
 function Describer(title, tests_array) {
     return describe(title, ()=>{
-        Tester(tests_array, tests_array)
+        Tester(tests_array)
     })
 }
 /**
  * @type {(arr_to_test: {title:string, content}[])}
  */
-function Tester(arr_to_test) {
-    arr_to_test.forEach((element) => {
-        return Describer(
-            element.title, 
-            element.content)
+function Test_Master(list) {
+    list.forEach((element) => {
+        let title = element.title
+        return Describer(`${title}`, element.content)
     })
 }
 
@@ -71,5 +70,5 @@ let Arrays_to_test = [
 ]
 
 describe("Language() tester", ()=>{
-    Tester(Arrays_to_test)
+    Test_Master(Arrays_to_test)
 })
