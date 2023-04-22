@@ -16,9 +16,9 @@ by Tasye
 /**
  * @description With the prefix and the name(as *item*) return the appropriated prefix
  * @author Tasye24
- * @param {object} prefix __prefix.long__: long version, __prefix.short__: short version
+ * @param {object} prefix __prefix.full__: full version, __prefix.short__: short version
  * @returns {string} return the great prefix & the item
- * @type {(prefix: {long: string, short: string}, item: string) => string}
+ * @type {(prefix: {full: string, short: string}, item: string) => string}
  * */
 const take_long_or_short = (prefix, item) => {
   let space = " "; // can be alt+255 if troubles
@@ -30,7 +30,7 @@ const take_long_or_short = (prefix, item) => {
   if (voyels.includes(first_letter)) {
     return prefix.short + item;
   } else {
-    return prefix.long + space + item;
+    return prefix.full + space + item;
   }
 }
 
@@ -85,7 +85,7 @@ function get_from_language(language, word) {
  */
 const language = (item, with_pack, word, language) => {
   let response;
-  if(with_pack) {
+  if(with_pack& languages.includes(language) ) {
     response = take_long_or_short(
       get_from_language(language, word), item
     )
