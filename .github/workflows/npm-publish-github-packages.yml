@@ -43,9 +43,11 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm ci
+      # error in this line https://github.com/Tasye24/tasye-languages-tools/issues/1
       - run: npm publish --access=public --registry https://registry.npmjs.org/
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GHUB_TOKEN }}
   publish-gpr:
     name: Publish to GitHub Packages
     needs: build

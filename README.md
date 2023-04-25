@@ -1,6 +1,10 @@
 # tasye-languages-tools
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/tasye24/tasye-languages-tools/npm-publish-github-packages.yml)![GitHub top language](https://img.shields.io/github/languages/top/tasye24/tasye-languages-tools) ![GitHub package.json version](https://img.shields.io/github/package-json/v/tasye24/tasye-languages-tools) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/tasye24/tasye-languages-tools) ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/tasye24/tasye-languages-tools) ![licence](https://img.shields.io/github/license/tasye24/tasye-languages-tools) ![repo size](https://img.shields.io/github/repo-size/tasye24/tasye-languages-tools?label=rpo%20size%20%28full%29)
+<!-- Logo -->
+
+<img style="width: 100%" src="./project_logos/logo.png" alt="logo">
+
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/tasye24/tasye-languages-tools/npm-publish-github-packages.yml) ![GitHub top language](https://img.shields.io/github/languages/top/tasye24/tasye-languages-tools) ![GitHub package.json version](https://img.shields.io/github/package-json/v/tasye24/tasye-languages-tools) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/tasye24/tasye-languages-tools) ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/tasye24/tasye-languages-tools) ![licence](https://img.shields.io/github/license/tasye24/tasye-languages-tools) ![repo size](https://img.shields.io/github/repo-size/tasye24/tasye-languages-tools?label=rpo%20size%20%28full%29)
 
 ## Intro
 
@@ -8,11 +12,11 @@ In some languages like french (idk if others languages have same patterns) befor
 
 That's why instead of getting
 
-> "Le chat `<u style="text-decoration: #f00 wavy underline">`de A `</u>`driana"
+> "Le chat <u style="text-decoration: #f00 wavy underline">de A </u>driana"
 
 We write:
 
-> "Le chat `<u>`d'A `</u>`driana"
+> "Le chat <u>d'A </u>driana"
 
 ## Why use this ?
 
