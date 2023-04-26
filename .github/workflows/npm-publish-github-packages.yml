@@ -38,16 +38,15 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://npm.pkg.github.com/
           scope: '@tasye24'
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{secrets.GHUB_TOKEN}}
       - run: npm ci
       # error in this line https://github.com/Tasye24/tasye-languages-tools/issues/1
       - run: npm publish --access=public --registry https://registry.npmjs.org/
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{secrets.GHUB_TOKEN}}
   publish-gpr:
     name: Publish to GitHub Packages
     needs: build
