@@ -45,8 +45,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GHUB_TOKEN }}
   publish-gpr:
     name: Publish to GitHub Packages
-    needs: build
-    
+    needs: 
+      - build
+      - publish-npm
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
