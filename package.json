@@ -30,6 +30,7 @@
   ],
   "license": "ISC",
   "publishConfig": {
+    "registry": "https://npmjs.com/",
     "@tasye24:registry": "https://npm.pkg.github.com"
   },
   "bugs": {
