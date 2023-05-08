@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://registry.npmjs.com/
           cache: npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -38,10 +38,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://registry.npmjs.com/
       - run: npm ci
       # error in this line https://github.com/Tasye24/tasye-languages-tools/issues/1
-      - run: npm publish --access=public --registry https://registry.npmjs.org/
+      - run: npm publish --access=public --registry https://registry.npmjs.com/
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GHUB_TOKEN }}
