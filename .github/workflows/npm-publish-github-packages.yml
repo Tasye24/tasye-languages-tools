@@ -27,6 +27,8 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm test
+      - name: Build Package for Production
+        run: npm run build
   publish-npm:
     name: Publish to npm
     needs: build

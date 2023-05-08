@@ -5,14 +5,6 @@ by Tasye
 
 */
 
-
-// Problematic:
-// it's embarassing (in french, maybe other languages)
-// when you see for example : "Le tailleur de André"
-//                                          ^^^
-// in french you could write like this: "Le tailleur d'André"
-//                                                   ---
-
 /**
  * @description With the prefix and the name(as *item*) return the appropriated prefix
  * @author Tasye24
@@ -38,16 +30,17 @@ const take_long_or_short = (prefix, item) => {
  * @param {string} pack name of the pack to import
  */
 function pack_import(pack) {
-  let pack_path = "./pack/" + pack + ".json"
+  let pack_path = "../pack/" + pack + ".json"
   let pack_json = require(pack_path);
   //let pack_items = Object.keys(pack_json)
   return pack_json
 }
 
+let version = require("../package.json")["version"]
 let languages = ["fr-FR", "it-IT"]
 let lang_packs = {}
 languages.forEach((lang) => {
-  let a = require("./pack/"+[lang]+".json")
+  let a = require("../pack/"+[lang]+".json")
   lang_packs[lang] = a // pack_import(lang);
 })
 
@@ -101,5 +94,14 @@ const language = (item, with_pack, word, language) => {
     language("Arbre", true, "le", "fr-FR") + "."
   )*/
 
-module.exports = take_long_or_short
-module.exports = language
+
+class Elisions {
+  constructor() {
+    this.elision = language;
+    this.info = {
+      "languages": languages
+    }
+  }
+}
+
+module.exports = Elisions

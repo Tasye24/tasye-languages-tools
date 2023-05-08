@@ -1,28 +1,31 @@
 const assert = require("assert")
-const library = require("../short-long")
+const library = require("../index.js")
+
+let TLTools = new library
+let language = TLTools.Elisions.elision
 
 let tests = {
     without_pack: [
         {
-            actual: library("Andréa", 0,{full: "de",short: "d'"}),
+            actual: language("Andréa", 0,{full: "de",short: "d'"}),
             expected: "d'Andréa"
         }, {
-            actual: library("Bobby", 0,{full: "de",short: "d'"}),
+            actual: language("Bobby", 0,{full: "de",short: "d'"}),
             expected: "de Bobby"
         }
     ],
     with_pack: [
         {
-            actual: library("Andréa", 1, "de", "fr-FR"),
+            actual: language("Andréa", 1, "de", "fr-FR"),
             expected: "d'Andréa"
         }, {
-            actual: library("bus", 1, "le", "fr-FR"),
+            actual: language("bus", 1, "le", "fr-FR"),
             expected: "le bus"
         }, {
-            actual: library("autobus", 1, "lo", "it-IT"),
+            actual: language("autobus", 1, "lo", "it-IT"),
             expected: "l'autobus"
         }, {
-            actual: library("fratello", 1, "lo", "it-IT"),
+            actual: language("fratello", 1, "lo", "it-IT"),
             expected: "lo fratello"
         }
     ]
@@ -69,6 +72,11 @@ let Arrays_to_test = [
     }
 ]
 
-describe("Language() tester", ()=>{
+console.log(`
+Tasye Language Tools (v${TLTools.__info__["version"]})
+List of Languages avaible: ${TLTools.Elisions.info.languages.join(", ")}
+`)
+
+describe("Elisions (Elision.elision) tester", ()=>{
     Test_Master(Arrays_to_test)
 })
